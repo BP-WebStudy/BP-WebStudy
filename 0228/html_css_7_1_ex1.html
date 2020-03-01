@@ -1,0 +1,83 @@
+<!--(id와 class)
+float은 아래말고 왼쪽 오른쪽 등으로 배치해줌
+overflow hideen은 flaot있으면 무조건넣어주기
+class는 .이고 id는 #
+width는 가로
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhmtl">
+<head>
+    <titile></titile>
+
+    <style>
+
+        #header {  
+            width: 500px;
+            background-color: chartreuse;
+            border:1px solid #888888;
+            text-align:center;
+        }
+
+        #wrap {
+            width:500px;
+            background-color:darkgoldenrod;
+            border:2px solid #808080;
+            text-align:center;
+            overflow:hidden;
+        }
+
+        #content {
+            width:350px;
+            border:1px solid red;
+            float:left;
+        }
+
+        #side_banner{
+            border:1px solid red;
+            float:left;
+        }
+
+        #footer{
+            clear:both;
+            width:500px;
+            background-color: deeppink;
+            border:3px solid;
+            text-align:center;
+        }
+
+        .menu1, .menu3, .menu5 {
+            font-size:20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+
+    <div id="wrap">
+        <div id="content">
+            <h1>CONTENT</h1>
+            <ul>
+                <li class="menu1">menu1</li>
+                <li class="menu2">munu2</li>
+                <li class="menu3">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu5">menu5</li>
+            </ul>
+        </div>
+        <div id="side_banner">
+            <h1>BANNER</h1>
+            <a href="http://www.sba.seoul.kr3" target="_blank"><img src="http://www.sba.seoul.kr/kr/img2018/img_logo.png" target="_blank"/></a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+
+</body>
+</html>
