@@ -1,0 +1,101 @@
+<!--(float속성)
+position속성과 함께 요소의 위치를 설정하기 위한 속성
+float속성을 갖고 있는 태그를 감싸고 있는 태그에 overflow:hidden;을 꼭 적어줘야한다.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        
+        div{
+            border:1px solid #cccccc;
+            text-align: center;
+            padding:5px;
+            margin:5px;   
+        }
+
+        #con{
+            width:800px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+
+        #header{
+            width:780px;
+            height:100px;
+            line-height: 100px;
+        }
+
+        #nav{
+           width:780px;
+           height:100px;
+        }
+
+        #nav ul{
+            overflow: hidden;
+        }
+
+        #nav ul li{
+            list-style: none;
+            float:left;
+            width:138px;
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            border:1px solid #cccccc;
+            float:left;
+        }
+
+        #wrap{
+            width:780px;
+            overflow: hidden;
+        }
+
+        #content{
+            width:600px;
+            height:300px;
+            float:left;
+        }
+
+        #banner{
+            width:135px;
+            height:300px;
+            float:left;
+        }
+
+        #footer{
+            width:780px;
+            height:100px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div id="header">HEADER</div>
+
+        <div id="nav">
+            <p>NAVIGATION</p>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </div>
+
+        <div id="wrap">
+            <div id="content">CONTENT</div>
+            <div id="banner">BANNER</div>
+        </div>
+
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>
