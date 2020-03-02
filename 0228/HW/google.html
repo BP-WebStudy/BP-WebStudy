@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+
+    <style>
+        
+        #wrap {
+            width:100%;
+            height:100%;
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 3px;
+        }
+
+        #nav {
+            width:100%;
+            height:100%;
+            margin: 5px;
+        }
+        #nav ul {
+            overflow:hidden;
+            text-align:right;
+        }
+
+        #nav ul li {
+            display:inline;
+            list-style: none;
+            padding:0 5px;
+    
+        }
+
+        #nav ul li:nth-child(4) {
+            margin:5px;
+            font-weight:bold;
+            background-color: #d3d3d3;
+            color:white;
+            border-radius: 100%;
+        }
+
+        #image {
+            margin:150px 0px 0px 0px;
+
+        }
+        #image .center {
+            width:30%;
+            height:30%;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #search {
+            margin:30px 0;
+            width:100%;
+            height:100%;
+        }
+        #search ul {
+            overflow:hidden;
+            text-align:center;
+        }
+        #search ul li {
+            display:inline;
+            list-style:none;
+            padding:0 5px;
+        }
+
+        input {
+            width:200px;
+            height:20px;
+            border-right:hidden;
+        }
+        input .searching {
+            border:1px solid;
+            border-radius:2px;
+        }
+        #input-under ul{
+            text-align:center;
+
+        }
+        
+        #input-under ul li{
+            list-style:none;
+            display:inline;
+            border:1px solid #000000;
+            border-radius: 10px;
+            padding:5px 10px;
+            margin:5px;
+            background-color: #5f5f5f;
+        }
+        
+        #footer {
+            margin:130px 0px 0px 0px;
+        }
+        #footer #under_nav1 {
+            height:50px;
+            line-height:50px;
+            background-color: #d3d3d3;
+            padding:0 0 0 30px;
+        }
+        #footer #under_nav2 {
+            background-color: #d3d3d3;
+            height:50px;
+            line-height: 50px;
+        }
+        #footer #under_nav2 ul{
+            list-style:none;
+            overflow:hidden;
+            padding:0 0 0 20px;    
+        }
+        #footer #under_nav2 ul li {
+            float:left;
+            overflow:hidden;
+            padding: 0 0 0 10px;
+        }
+        #footer #under_nav2 ul li:nth-child(n+5) {
+            float:right;
+            padding:0 10px 0 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="nav">
+            <ul>
+                <li>Gmail</li>
+                <li>이미지</li>
+                <li>메뉴</li>
+                <li>형욱</li>
+            </ul>
+        </div>
+        <div id="image">
+            <img src="google.png" alt="google" class="center"/>
+        </div>
+        <div id="search">
+            <ul>
+                <li>돋보기</li>
+                <li>
+                    <input type="text" class="searching" />
+                </li>
+                <li>키보드</li>
+                <li>마이크</li>
+            </ul> 
+        </div>
+        <div id="input-under">
+            <ul>
+                <li id='google-search'>Google 검색</li>
+                <li id="I'm Feeling Lucky">I'm Feeling Lucky</li>
+            </ul>
+        </div>
+        <div id="footer">
+            <div id="under_nav1">대한민국</div>
+            <div id="under_nav2">
+                <ul>
+                    <li>광고</li>
+                    <li>비즈니스</li>
+                    <li>Google정보</li>
+                    <li>검색의 원리</li>
+                    <li>설정</li>
+                    <li>약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
