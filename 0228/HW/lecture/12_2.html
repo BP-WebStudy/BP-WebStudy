@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            width:800px;
+            margin:0 auto;
+            border: 1px solid #cccccc;
+        }
+        #header {
+            height:50px;
+            background-color: #cccccc;            
+        }
+        #wrap {
+            height: 200px;
+            position:relative;
+        }
+        #content1 {
+            width:100px;
+            height:100px;
+            z-index:20;
+            background-color: red;
+            border: 2px dashed green;
+            top:10px;
+            left:10px;
+            position:absolute;
+        }
+        #content2 {
+            width:100px;
+            height:100px;
+            z-index:10;
+            background-color: yellow;
+            border:2px dashed green;
+            top:50px;
+            left:50px;
+            position:absolute;
+        }
+        #footer {
+            height:50px;
+            background-color: #cccccc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">header</div>
+        <div id="wrap">
+            <div id="content1">content1</div>
+            <div id="content2">content2</div>
+        </div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>
