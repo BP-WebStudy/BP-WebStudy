@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="prefixfree.min.js"></script>
+
+    <style>
+
+        * {margin: 0;padding: 0;}
+        li {list-style: none;}
+        #menu {width:1000px; margin: 0 auto; 
+        border :1px solid #cccccc;height:300px;}
+        ul {overflow: hidden;height:300px;}
+        li{float: left; border:1px solid #cccccc;padding:20px 30px; 
+        background-color: #ff0000; color:#ffffff;}
+        li:nth-child(1):hover {background-color: #ffff00;transform:scale(2);
+        transform-origin: 50% 0;z-index: 999; color: #000000;}
+        li:nth-child(2):hover {background-color: #ffff00;transform:skew(10deg);z-index: 999;}
+        li:nth-child(3):hover {background-color: #ffff00;color:#000000;
+        animation-name: ani;animation-duration: 2s;animation-iteration-count: infinite;}
+        @keyframes ani {
+            from{
+
+            }
+            to {
+                transform:scale(2) rotate(15deg) skew(-20deg);
+                transform-origin:50% 0;z-index:9999;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>lnb1</li>
+            <li>lnb2</li>
+            <li>lnb3</li>
+            <li>lnb4</li>
+            <li>lnb5</li>
+
+        </ul>
+    </div>
+</body>
+</html>
