@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자, 링크, 부정 선택자</title>
+
+    <style>
+        #header{
+            border-bottom:1px solid #cccccc;
+        }
+
+        #history2:first-letter, #history1:first-letter{
+            font-size:2em;
+        } /* 문장의 첫 글자에 속성을 지정한다. */
+
+        #history2:first-line, #history1:first-line{
+            font-weight: bold;
+            color:coral;
+        } 
+
+        #content p:first-child::selection{
+            background-color: cornflowerblue;
+            font-weight: bold;
+        } 
+        /* p 태그 된 문장이 드래그 될 시 속성을 지정한다.
+        /* first-child 는 content의 첫번째 p 태그를 말한다. */
+
+        #content a::after {
+            content: '-' attr(href);
+        } /* a 태그 뒤에 '-' 와 하이퍼링크 주소를 삽입한다. */
+
+        #content li:not(.memo){
+            font-weight: bold;
+        } /* class가 memo가 아닌 것을 선택해 속성을 지정한다. */
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="header">
+            <h1>설립개요</h1>
+        </div>
+
+        <div id="content">
+            <p>
+                연습용 문장입니다. 
+            </p>
+            <p id="history2">
+                2020년 3월 1일 <br />
+                <ul>
+                    <li><a href="http://www.sba.seoul.kr" target="_blank">서울산업진흥원</a></li>
+                    <li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+                    <li class="memo">안녕, 나는 메모</li>
+                </ul>
+            </p>
+            <p id="history1">
+                2020년 3월 2일
+            </p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

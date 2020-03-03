@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응, 상태, 구조 선택자</title>
+
+
+    <style>
+
+        ul li{ color: green; }
+
+        ul li:hover{ color:white; font-size:2em;}
+
+        div { width:500px;}
+
+        ul li:nth-child(2n+1){ background-color:coral;}
+        ul li:nth-child(2n){ background-color:cornflowerblue;}
+
+        ul li:first-child{ border-radius:10px 10px 0 0 ;}
+        ul li:last-child{border-radius: 0 0 10px 10px ;}
+
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+    
+
+
+</body>
+</html>

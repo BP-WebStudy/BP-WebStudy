@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 단위, display 속성, 투명도 </title>
+    <!-- 
+        1. 1em = 16px, nem = n배수로 글씨 크기 조정 
+        2. 100% = 기본 크기, n*100% = n배수로 글씨 크기 조정 
+    -->
+
+    <!-- div 는 기본적으로 'block' 속성 (= 수직형) 을 가진다. 
+        
+        [ display - block, inline block, none ]
+        - inline : 수평형, 상하 조정 불가  
+        - none : 화면 x 
+        - inline-block : 수평형, 상하 조정 가능  
+
+        [ display 의 'none' vs visibilty 의 'hidden' ]
+        - none : 원래 태그가 가진 자릿값도 다 사라진다. 
+        - hidden : 원래 태그의 자리가 보존된다. ( 화면에 빈 공간이 존재 )
+    --> 
+
+    <!-- 투명도 조정 : opacity -->
+
+
+    <style>
+    
+        * { margin:0 ; padding: 0;}
+
+    #wrap {
+        width:800px;
+        height:500px;
+        margin:0 auto; /* 가운데 정렬 */
+        border:1px solid #cccccc;
+    }
+    #content{
+        background-image:url('http://www.sba.seoul.kr/kr/images/index/visual16.jpg');
+        /* background image 를 url() 속성을 통해 지정 */
+
+        width:80%;
+        height:100%;
+        margin:0 auto;
+        font-size:2em;
+        color:#ffffff;
+        font-weight:bold;
+        text-align:center;
+    }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="content">
+            해당 이미지는 저작권 보호를 받습니다.
+        </div>
+    </div>
+</body>
+</html>
+

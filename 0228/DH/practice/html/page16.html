@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 속성, 후손, 자손, 동위 선택자</title>
+
+    <style>
+
+        /* FORM */
+        input {
+            color:green;
+            font-size:30px;
+            font-weight: bold;
+        }
+
+        input[type=text] {
+            color:orange;
+            font-size:50px;
+            width:200px;
+        }
+
+        img[src] {
+            border:5px solid green;
+        }
+
+
+        ul li.music1 { font-size:2em; }
+
+        div h1{ color:blue;} /* 후손 : div 아래 모든 h1에 스타일 지정 */
+        div > h1 { color:cornflowerblue; } /* 자손 : div 바로 밑 h1에만 스타일 지정 */
+    
+        h1~li { background-color:rgb(211, 211, 104);} /* '~' = h1 아래 동등한 위치의 모든 태그 스타일 지정 */
+        ul+h1 { font-weight:bold; font-size:2em;} /* '+' = ul 바로 아래 동등한 위치의 태그 "하나만" 스타일 지정 */
+
+    </style>
+
+<!-- ul과 ol을 구분하여 스타일을 지정하자. -->
+<!-- 만약 후손과 자손 코드 위치가 변경되면 '후손>자손'(범위) 을 따른다. -->
+<!-- 동위 선택자는 기준이 되는 '정렬'이 중요하다. -->
+
+</head>
+<body>
+    
+    <div id="header">
+        <h1>WELCOME:)</h1>
+    </div>
+
+    <div id="wrap">
+        
+        <form>
+            <ol>
+                이름 : <input type="text"/> <br />
+                아이디 : <input type="text" /> <br />
+                비밀번호 : <input type="password" /> <br />
+                전화번호 : <input type="tel" /> <br />
+            </ol>
+        </form>
+
+        <img src="playlist.png" alt="playlist" /><br />
+
+
+        <div>
+            <h1>Playlist</h1>
+            <ul>
+                <h1>LIST1</h1>
+                <li class="music1">music</li>
+                <li class="music2">music</li>
+                <li class="music1">music</li>
+                <li class="music2">music</li>
+                <li class="music1">music</li>
+            </ul>
+
+            <ol>
+                <h1>LIST2</h1>
+                <li class="music1">music</li>
+                <li class="music2">music</li>
+                <li class="music1">music</li>
+                <li class="music2">music</li>
+                <li class="music1">music</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

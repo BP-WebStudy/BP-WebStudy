@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin,padding,border</title>
+    
+    <style>
+
+        * {
+            margin:0; padding:0;
+        }
+
+        div{
+            width:200px; height:200px;
+        }
+
+        div:nth-child(1){
+            background-color: red;
+        }
+
+        div:nth-child(2){
+            
+            background-color: green;
+
+            border-top:5px solid #ff8dff;
+            border-bottom:5px dotted coral;
+            border-radius: 10px;
+
+            box-sizing:border-box; 
+            /* 위 박스와 사이즈가 같게 border를 안쪽으로 생성되게 한다. 
+            <-> content-box
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <div>content</div>
+    <div>content</div>
+</body>
+</html>
