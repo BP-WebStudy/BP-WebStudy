@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+
+    <style>
+
+        * { margin:0; padding:0 }
+        a { text-decoration:none; color:crimson; font-weight: bold;}
+
+        #nav {overflow:hidden; width:800px; height:200px; margin:0 auto; border:1px solid #cccccc;}
+        #nav div {float:left; width:150px; height:170px; margin:10px 3px;
+        line-height:200px; text-align:center; 
+        border-top:1px solid #cccccc; border-bottom: 1px solid #cccccc;;}
+
+
+        #practice{
+            width:300px; height:300px; background-color: coral;
+            color:cornsilk; font-weight: bold;
+            text-align:center; /* 수평 구조적 가운데 정렬 */ 
+            line-height: 300px; /* 수직 구조적 가운데 정렬 */
+            font-size: 4em;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="nav">
+        <div><a href="#none">menu1</a></div>
+        <div><a href="#none">menu2</a></div>
+        <div><a href="#none">menu3</a></div>
+        <div><a href="#none">menu4</a></div>
+        <div><a href="#none">menu5</a></div>
+
+    </div>
+
+
+    <div id="practice">HELLO</div>
+</body>
+</html>
+
+<!-- 위치 조정 position: relative / absolute 
+top, left, right, bottom: 얼마나 떨어져있는가 -->
+
+<!-- z-index : n => n의 숫자가 큰 태그가 앞에 위치한다. -->
