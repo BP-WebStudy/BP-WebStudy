@@ -12,7 +12,7 @@
             height:100%;
             background-color: #ffffff;
             margin: 0 auto;
-            padding: 3px;
+            padding: 0;
         }
 
         #nav {
@@ -61,20 +61,44 @@
             overflow:hidden;
             text-align:center;
         }
+    
         #search ul li {
+            margin: 0px;
             display:inline;
             list-style:none;
-            padding:0 5px;
         }
 
+        #search ul li:nth-child(1) {
+            border:2px solid #000000;
+            border-radius: 50px 0 0 50px;
+            border-right: 0px;
+            padding:0 0 0 10px;
+            
+        }
+        #search ul li:nth-child(3) {
+            border:2px solid #000000;
+            border-right: 0px;
+            border-left: 0px;
+        }
+
+        #search ul li:nth-child(4) {
+            border:2px solid #000000;
+            border-left: 0px;
+            border-radius: 0 50px 50px 0;
+        }
+        #search ul li:hover {
+            box-shadow: 5px 5px 5px;
+        }
         input {
             width:200px;
             height:20px;
-            border-right:hidden;
+            border:2px solid #000000;
+            border-right:0px;
+            border-left:0px;        
         }
-        input .searching {
-            border:1px solid;
-            border-radius:2px;
+
+        input:hover {
+            box-shadow: 5px 5px 5px;
         }
         #input-under ul{
             text-align:center;
@@ -92,18 +116,22 @@
         }
         
         #footer {
-            margin:130px 0px 0px 0px;
+            margin:150px 0px 0px 0px;
+            
         }
         #footer #under_nav1 {
             height:50px;
             line-height:50px;
             background-color: #d3d3d3;
             padding:0 0 0 30px;
+            margin:0px;
+            border: 0.5px solid #000000;
+            border-bottom:0px;
         }
         #footer #under_nav2 {
             background-color: #d3d3d3;
+            border: 0.5px solid #000000;
             height:50px;
-            line-height: 50px;
         }
         #footer #under_nav2 ul{
             list-style:none;
