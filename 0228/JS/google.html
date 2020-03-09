@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+            font-size:0.8em;
+        }
+
+        #header{
+            overflow: hidden;
+        }
+
+        #header ul{
+            overflow: hidden;
+            float:right;
+        }
+
+        #header ul li{
+            float:left;
+            padding:10px;
+            margin-top:10px;
+        }
+
+        #header ul li:last-child{
+            margin-right:20px;
+        }
+
+        #wrap{
+            padding-top:100px;
+            margin:0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #wrap #content{
+            border:1px solid #cccccc;
+            width:550px;
+            text-align:center;
+            margin:0 auto;
+            border-radius:30px;
+            position: relative;
+        }
+
+        #content #search input{
+        
+        }
+
+        #content #search img:first-child{
+            position: absolute;
+            left:0;
+            bottom:0;
+            top:0;
+        }
+
+        #content #search img:last-child{
+            position: absolute;
+            right:0;
+            bottom:0;
+            top:0;
+        }
+
+        #content #search img:nth-child(3){
+            position: absolute;
+            top:3px;
+        }
+
+        #content #search input{
+            width:450px;
+            padding-top:10px;
+            border:1px solid white;
+        }
+
+        #content2{
+            height:10px;
+            line-height:10px;
+        }
+
+        #content2 ul {
+            position: absolute;
+            left:500px;
+
+            overflow: hidden;
+            text-align: center;
+            margin:0 auto;
+            padding-top:30px;
+           
+        }
+
+        #content2 ul li{
+            float:left;
+            padding:13px 20px;
+            margin:10px;
+            border-radius: 5px;
+            background-color:whitesmoke;
+            text-align: center;
+        }
+
+        #footer{
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            border:1px solid #cccccc;
+            background-color:whitesmoke;
+            overflow: hidden;
+            
+            font-size:0.9em;
+        }
+
+        #footer #footer1{
+            
+            padding:20px;
+            overflow: hidden;
+            border-bottom:1px solid #cccccc;
+        }
+
+        #footer #footer2{
+            font-size: 1.3em;
+            overflow: hidden;
+            height:50px;
+        }
+
+        #footer #footer2 ul:nth-child(1){
+            display: block;
+            padding:10px 10px;
+            position: absolute;
+            bottom:0;
+            left:0;
+        }
+        #footer #footer2 ul:nth-child(1) li{
+            float:left;
+            padding:10px;
+        }
+
+        #footer #footer2 ul:last-child{
+            display: block;
+            padding:10px 20px;
+            float:left;
+            position: absolute;
+            bottom:0;
+            right:0;
+        }
+
+        #footer #footer2 ul:last-child li{
+            float:left;
+            padding:10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a href="#none">Gmail</a></li>
+            <li><a href="#none">이미지</a></li>
+            <li><a href="#none"><img src="자료/block.JPG" width="23"></a></li>
+            <li><a href="#none"><img src="자료/jisun.JPG" width="25"/></a></li>
+        </ul>
+    </div>
+
+    <div id="wrap">
+        <div id="img"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width=300px;/></div>
+        
+        <div id="content">
+            <div id="search">
+                <a href="#none"><img src="자료/돋보기.JPG" width="25"/></a>
+                <input type=text/>
+                <img src="자료/keyboard.JPG" width="30"/>
+                <img src="자료/음성녹음.JPG" width="23"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="content2">
+        <ul>
+            <li>
+                <a href="#none">Google 검색</a>
+            </li>
+
+            <li>
+                <a href="#none">I'm Feeling Lucky</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <div id="footer1"> 
+            <p>대한민국</p>
+        </div>
+        
+        <div id="footer2">
+            <ul>
+                <li><a href="#none">광고</a></li>
+                <li><a href="#none">비즈니스</a></li>
+                <li><a href="#none">Google 정보</a></li>
+                <li><a href="#none">검색의 원리</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#none">개인정보방침</a></li>
+                <li><a href="#none">약관</a></li>
+                <li><a href="#none">설정</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
