@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin:0;
+        }
+        #nav {
+            width:100%;
+            height:65px;
+            background-color: #d3d3d3;
+        
+        }
+        #nav ul {
+            position: relative;
+        }
+        
+        #nav ul .logo {
+            position: absolute;
+            font-weight: bold;
+            top:10px;
+            left:30px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #nav ul .glass {
+            position: absolute;
+            top:14px;
+            left:319px;
+            width:25px;
+            height:31px;
+            border:none;
+        }
+        #nav ul .glass img {
+            
+            width:25px;
+            height:31px;
+        }
+        #nav ul .search {
+            position:absolute;
+            top:15px;
+            left:350px;
+            width:900px;
+            height:30px;
+            border:none;
+        }
+        #nav .login {
+            position:absolute;
+            top:15px;
+            left:1350px;
+            padding:2px 20px;
+        }
+        #nav .signup {
+            position:absolute;
+            top:15px;
+            left:1440px;
+            padding:2px 25px;
+        }
+        .slide {height:678px; overflow:hidden;}
+        .slide ul {position:relative; height:100%; list-style:none;}
+        .slide li {position: absolute; left:0; right:0;top:0;bottom:0;opacity:0;animation:fade 20s infinite;}
+        .slide li img {width:100%; height: 100%;}
+        .slide li:nth-child(1){animation-delay:0s}
+        .slide li:nth-child(2){animation-delay:5s}
+        .slide li:nth-child(3){animation-delay:10s}
+        .slide li:nth-child(4){animation-delay:15s}
+        /* 100 / 8 = 12.5 */
+        @keyframes fade {
+        0% {opacity:0; }
+        5% {opacity:0.5; }
+        25% {opacity:0.5; }
+        30% {opacity:0; }
+        100% {opacity:0; }
+        }
+
+
+        section {
+            position:relative;
+            margin-top:70px;
+        }
+        
+        .center {
+            text-align:center;
+        }
+        .idea {
+            font-size:56px;
+            font-weight: bold;
+            margin:40px 0;
+        }
+        .community {
+            font-size:26px;
+            font-weight: bold;
+        }
+        .free-start{
+            font-size:24px;
+            font-weight: bold;
+            padding:25px 50px;
+            margin:30px 0px;
+            border-radius: 10px;
+        }
+        .source {
+            margin:70px 0 0 0;
+        }
+
+        #footer {
+            width:100%;
+            height:45px;
+            line-height: 45px;
+            background-color: black;
+            position:absolute;
+            bottom: 0;
+            
+        }
+        #footer ul {
+            list-style: none;
+            overflow:hidden;
+            margin-left:130px;
+            position:absolute;
+            bottom:0;
+        }
+
+        #footer ul li {
+            float:left;
+            padding:0 30px;   
+            color:#d3d3d3;            
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <ul>
+                <div class="logo">flickr</div>
+                <button class="glass" type="submit"><img src="5.jpg" alt=""/></button>
+                <input class="search" placeholder="사진, 인물 또는 그룹"/>
+                <button class="login">로그인</button>
+                <button class="signup">가입</button>
+            </ul>
+            <div class="slide">
+                <ul>
+                    <li><img src="1.jpg" alt="" /></li>
+                    <li><img src="2.jpg" alt="" /></li>
+                    <li><img src="3.jpg" alt="" /></li>
+                    <li><img src="4.jpg" alt="" /></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="center">
+            <div class="idea">참신한 생각이 필요하세<br>요?</div>
+            <div class="community">Flickr 커뮤니티에 참여하여 수백억 개의 사진과 2백만<br>개의 그룹을 만나보세요</div>
+            <button class="free-start">무료시작</button>
+            <div class="source">제목<br>출처:ooooooo</div>
+        </div>
+    </section>
+    <div id="footer">
+        <ul>
+            <li>정보</li>
+            <li>구인/구직</li>
+            <li>블로그</li>
+            <li>개발자</li>
+            <li>지침</li>
+            <li>개인 정보</li>
+            <li>이용약관</li>
+            <li>도움말</li>
+            <li>도움말 포럼</li>
+            <li>한글</li>
+        </ul>
+    </div>
+</body>
+</html>
