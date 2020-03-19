@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참신한 생각이 필요하세요? </title>
+
+    <style>
+        
+        * { padding:0; margin:0; font-family: Arial, Helvetica, sans-serif;} 
+        a {  text-decoration:none; color:black;} 
+        li { list-style: none; }
+
+        #main {  height:630px; }
+
+            .slide{ width:100%; height:650px; }
+            .slide ul{position:relative;height:100%; overflow: hidden; }
+            .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;
+                        animation:fade 20s infinite;}
+            
+            .slide li:nth-child(1){animation-delay:0s}
+            .slide li:nth-child(2){animation-delay:5s}
+            .slide li:nth-child(3){animation-delay:10s}
+            .slide li:nth-child(4){animation-delay:15s}
+
+            /* 100 / 8 = 12.5 */
+            @keyframes fade {
+                0% {opacity:0;}
+                5% {opacity:1;}
+                25% {opacity:1;}
+                30% {opacity:0;}
+                100% {opacity:0;}
+            }
+
+        #header_back {
+            
+            position:absolute;left:0;right:0;top:0;bottom:0;
+            width:100%; height:60px; margin:0 auto; 
+            background-color: black ; 
+            opacity:0.3;
+
+        }
+
+        #header_info ul { 
+            position:absolute;left:0;right:0;top:0;bottom:0;
+            height:60px; line-height: 50px; 
+            overflow:hidden;
+            
+        }
+        
+        #header_info ul li {
+            width:80px; 
+            float:left;
+            text-align:center;
+            color:white;
+            padding:3px;
+        }
+      
+        #header_info ul li > a{
+            color: white;
+        }
+
+        #header_info ul li:nth-child(1) {
+            margin-left:20px;
+            font-weight: bold;
+            font-size: 2em;
+        } /* flickr */ 
+
+        #header_info ul li:nth-child(2){ 
+            margin:10px 110px;
+            width:890px; height:28px;
+            background-color: white;
+            border-radius: 3px;
+            
+        } /* search border */
+
+        #header_info ul li:nth-child(2) input { 
+            width:830px;
+            float:right;
+            padding:5px;
+            border-style: none;
+            font-size:15px;
+    
+         } /* search input */ 
+
+        #header_info  ul li:nth-child(3) {  
+           float:right; 
+           margin-right:23px;
+        } /* 가입 */
+        
+        #header_info  ul li:nth-child(3) button {  
+           width:100%;
+           height:35px;
+           font-weight: bold;
+           font-size:1em;
+           border-radius: 3px;
+           border-style: none;
+        }
+        /* 가입버튼  */
+
+        #header_info  ul li:nth-child(4){ 
+            float:right;
+            width:70px;
+        } /* 로그인 */ 
+
+        #wrap {
+            position:absolute;left:0;right:0;top:100px; bottom:0;
+            width:100%; height:510px;   
+        }
+
+        #content {
+            width:100%;
+            box-sizing:border-box; 
+            width:100%; height:500px;
+            text-align: center;
+            font-weight: bold;
+            padding:30px;
+        }
+
+    
+        #content ul li {
+            width:43%;
+            margin:0 auto;
+            color:white;
+            margin-top: 40px;
+        }
+
+
+        #content ul li:nth-child(1){  
+            z-index:200;  
+            width: 45%;
+            font-size: 1.7em;
+            line-height: 55px;
+        }
+
+        #content ul li:nth-child(3) button {
+            width:35%;
+            height:60px;
+            font-weight: bold;
+            font-size:1.5em;
+            background-color: white;
+            border-radius: 4px;
+            border-style: none;
+        }
+
+        #footer {
+            height:50px;
+            left:0; bottom:0; right:0; position: fixed;
+            text-align: center;
+            color:gray;
+            line-height: 50px;
+            background-color: black;
+            font-size:15px;
+        }
+
+        #footer ul { margin:0 auto; }
+        #footer ul li {  display: inline; margin-left:65px; }
+
+    </style>
+
+</head>
+<body>
+
+    <div id= "main">
+
+        <div class="slide">
+            <ul>
+                <li><img src="img/img1.jpg"></li>
+                <li><img src="img/img2.png"></li>
+                <li><img src="img/img3.jpg"></li>
+                <li><img src="img/img4.jpg"></li>
+            </ul>
+        </div>
+
+            <div id = "header_back"></div> 
+            <div id= "header_info">
+                
+                <ul>
+                    <li><a href="http://www.flickr.com">flickr</a></li>
+                    <li><input type="text" placeholder="사진,인물 또는 그룹"></li>
+                    <li><button><a href="http://www.naver.com">가입</a></button></li>
+                    <li>로그인</li>
+                    
+                </ul>
+            </div>
+
+            <div id = "wrap">
+            
+                <div id= "content">
+                    <ul>
+                        <li> <h1>참신한 생각이 필요하세요?</h1> </li>
+                        <li> <h2>Flickr 커뮤니티에 참여하여 수백억개의 사진과 2백만 개의 그룹을 만나보세요. </h2></li>
+                        <li> <button><a href="http://www.naver.com">무료 시작</a></button></li>
+                        <li> <h3>source</h3></li>
+                    </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="footer">
+
+        <ul>
+            <li>정보</li>
+            <li>구인/구직</li>
+            <li>블로그</li>
+            <li>개발자</li>
+            <li>지침</li>
+            <li>개인 정보</li>
+            <li>이용약관</li>
+            <li>도움말</li>
+            <li>도움말 포럼</li>
+            <li>한글</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
