@@ -7,12 +7,8 @@ var 후보군 = Array(45)
     return 인덱스+1;
 });
 
-console.log(후보군);
-
 var 셔플 = [];
-
 while( 후보군.length > 0){
-
    var 이동값 = 후보군.splice(Math.floor(Math.random()* 후보군.length),1)[0];
     셔플.push(이동값);
 }
