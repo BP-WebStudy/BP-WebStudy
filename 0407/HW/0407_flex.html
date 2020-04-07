@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        .container {
+            height: 100vh;
+            background:beige;
+            display:flex;
+            flex-direction: row; /* row column row-reverse column-reverse */
+            flex-wrap:wrap; /* 해당 행이 수용할수있는 아이템갯수가 넘어갈경우 다음줄로 개행*/
+            /* flex-flow: flex-direction + flex-wrap */
+            justify-content: center; /* 컨테이너의 내부아이템들의 위치를 조정 > 중심축 기준(가로로 조정)*/
+                /* flex-start flext-end center space-around space-between space-evenly*/
+            align-items: center; /* 컨테이너 자체의 위치를 조정 (세로로 조정)*/
+            /*center baseline*/
+            align-content:center;
+            /*center space-between*/
+        }
+        .item {
+            width:40px;
+            height: 40px;
+        }
+        .item1 {background:red;}
+        .item2 {background:orangered;}
+        .item3 {background:orange;}
+        .item4 {background:yellow;}
+        .item5 {background:greenyellow;}
+        .item6 {background:yellowgreen;}
+        .item7 {background:green;}
+        .item8 {background:blue;}
+        .item9 {background:blueviolet;}
+        .item10 {background:purple;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+    </div>
+</body>
+</html>
