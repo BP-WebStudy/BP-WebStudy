@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Bin</title>
+    <style>
+        .container{
+            background: beige;
+            height: 100vh;
+            display:flex;
+            flex-direction: row;
+            /* container의 정렬 기준 지정; column */
+            flex-wrap: wrap;
+            /* item이 한 line에 가득 차면 다음 line으로 줄맞춤; nowrap*/ 
+            /* flex-flow: row wrap; => direction과 wrap 한번에 사용!!  */
+
+            justify-content: space-around; 
+            /* item 배치 방향 ; 
+            center/flex-start/flex-end/space-evenly/space-between
+            => 중심축 기준 */
+            align-items: center;
+            align-content: space-between;
+            /* 여러 줄들 사이의 간격을 조정 */
+        }
+
+        .item{
+            width:150px;
+            height:40px;
+            border: 1px solid black;
+        }
+
+        .item1{
+            background: coral;
+            align-self:center;
+            /* container를 벗어나서 item 하나만 단독으로 위치 변화 가능 */
+        }
+
+        .item2{
+            background: rgb(107, 164, 238);
+        }
+        
+        .item3{
+            background: orchid;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+
+</html>
+
+

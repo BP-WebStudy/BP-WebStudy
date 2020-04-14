@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        .navbar {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: coral;
+            padding:8px 12px;
+        }
+        a{
+            text-decoration: none;
+            color:#ffffffd5;
+        }
+    
+        .logo {
+            font-size: 24px;
+            color:#ffffffbe;
+        }
+        
+        .menu_box {
+            display:flex;
+            list-style: none;
+            padding-left:0;
+        }
+
+        .menu_box li{
+            padding:8px 12px;
+        }
+
+        .menu_box li:hover {
+            background-color: navy;
+            border-radius: 4px;
+        }
+        .sns_box {
+            padding-left:0;
+        }
+        .toggle_btn {
+            display:none; /* 화면이 작을때만 표시 */
+            position: absolute;
+            right:32px;
+            font-size:24px;
+            color:navy;
+        }
+        @media screen and (max-width:768px){ 
+            .navbar {
+                flex-direction: column;
+                align-items:  flex-start;
+                padding:8px 24px;
+            }
+
+            .menu_box {
+                display:none;
+                flex-direction: column;
+                align-items: center;
+                width:100%;
+                padding-left:0;
+            }
+
+            .menu_box li{
+                width:100%;
+                text-align:center;
+            }
+
+            .sns_box{
+                display:none;
+                justify-content: center;
+                width:100%;
+            } 
+            .toggle_btn {
+            display:block; /* 화면이 작을때만 표시 */
+            }
+
+            .menu_box.active,
+            .sns_box.active {
+                display:flex;
+            }
+        }
+    </style>
+    <script src="main.js" defer ></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="#" /> DahyeCoding </div>
+        <ul class="menu_box">
+            <li><a href="">HOME</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">WEDDINGS</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">BOOKINGS</a></li>
+        </ul>
+        <ul class="sns_box">
+            sns_box
+        </ul>
+
+        <a href="#" class="toggle_btn">button</a>
+    </header>
+</body>
+</html>
