@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Bin</title>
     <style>
+
+        li {
+            list-style: none;
+        }
         .container{
             background: beige;
             height: 100vh;
@@ -38,10 +42,15 @@
 
         .item2{
             background: rgb(107, 164, 238);
+
         }
         
         .item3{
             background: orchid;
+        }
+        .item4 ul{
+            display:flex;
+            justify-content: space-between;
         }
 
 
@@ -52,6 +61,18 @@
         <div class="item item1">1</div>
         <div class="item item2">2</div>
         <div class="item item3">3</div>
+        <div class="item item4">4
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+            <ul>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+            </ul>
+        </div>
     </div>
 </body>
 
