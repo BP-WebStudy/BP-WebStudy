@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color:#ffffffd0;
+        }
+        header {
+            background-color: hsl(120, 97%, 24%);
+            width:100%;
+            height:55px;
+        }
+        .menu_box {
+            line-height: 45px;
+            text-align: center;
+        }
+        .menu {
+            display:inline-flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .menu li {
+            color:#ffffffd0;
+            margin:5px;
+            padding:0 20px;
+            height:45px;
+        }
+
+        .menu>li:hover {
+            background-color: #7daf37b7;
+            border-radius: 4px;
+        }
+
+        .menu>li:hover .sub_menu {
+            display:block;
+        }
+        
+        .sub_menu {
+            display:none;
+            background-color:hsl(120, 97%, 24%) ;
+            width:180px;
+            text-align: left;
+            padding:5px 20px;
+            border-radius: 4px;
+            margin-top:5px;
+        }
+
+        .sub_menu li:hover {
+            color: hsla(84, 100%, 59%, 0.521);
+        }
+      
+        @media screen and (max-width:750px){
+            header {
+               height:auto;
+            }
+            .menu {
+                flex-direction: column;
+                width:400px;
+            }
+            .menu_list{
+                position:relative;
+            }
+
+            .sub_menu {
+                background-color: #dce4dc;
+                border-radius: 4px;
+
+                width:340px;
+                position:absolute;
+                left:5px;
+            }
+            .sub_menu li {
+                color:#2e2929;
+            }
+            .sub_menu li:hover {
+             color:rgba(10, 114, 41, 0.522);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu_box">
+            <ul class="menu">
+                <li>Home</li>
+                <li class="menu_list"><a href="#">About Us</a> 
+                        <ul class="sub_menu">
+                            <li>Mission</li><hr />
+                            <li>Vision</li><hr />
+                            <li>Team</li>
+                        </ul>
+                </li>
+
+                <li class="menu_list"><a href="#">Services</a>
+                        <ul class="sub_menu">
+                            <li>Mission</li><hr />
+                            <li>Vision</li><hr />
+                            <li>Team</li>
+                        </ul>
+                </li>
+                <li class="menu_list"><a href="#">Clients</a>
+                    <ul class="sub_menu">
+                        <li>Mission</li><hr />
+                        <li>Vision</li><hr />
+                        <li>Team</li>
+                    </ul>
+                </li>
+                <li>Investors</li>
+                <li>Pricing</li>
+                <li>Training</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
