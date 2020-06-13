@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*삽입*/
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        li.push('f');
+        li=li.concat(['ab','cd']);
+        //맨 앞에 추가
+        li.unshift('z');
+        // 1번째 배열 위치에 0개 원소를 삭제한 후 원소 삽입
+        li.splice(1,0,'push');
+        //1번째 배열 위치에서 1개 원소('push')를 삭제한 후 원소 2개 삽입
+        li.splice(1, 1, '123', '456');
+        document.write(li+"<br />");
+
+        /*제거*/
+        //맨 앞의 원소를 제거
+        li.shift();
+        //맨 뒤의 원소를 제거
+        li.pop();
+        document.write(li+ "<br />");
+
+        /*정렬*/
+        li.sort();
+        document.write(li+ "<br />");
+
+        /*역순정렬*/
+        li.reverse();
+        document.write(li+ "<br />");
+
+    </script>
+</body>
+</html>
