@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: NanumGothic,"나눔고딕",NanumGothic,"돋움",dotum,sans-serif;
+        }   
+        body{
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 1000px;
+            height: 1000px;
+            overflow: hidden;
+        }
+
+        #wrap{
+            width: 450px; height: 500px;
+            /* border:1px solid black; */
+            float: right;
+            top: 150px; right: 50px;
+            position: absolute;  
+            overflow: hidden;
+        }
+
+        #login{
+            background-color: rgba(0, 79, 159, .9);
+            opacity: 30;
+            width: 280px; height: 200px;
+            float: left;
+            position: relative;
+        }
+        #login .login-title{
+            font-size: 0.9em;
+            color: white;
+            font-weight: normal;
+            margin-left: 20px; margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        #login .login-form input{
+            height: 30px; width: 150px;
+            margin-left: 20px;
+            margin-bottom: 1px;
+            display: block;
+            padding-left: 5px;
+            font-size: 13px;
+            border: none;
+        }
+        #login .submitt .btn{
+            color: white;
+            font-size: 13px; 
+            height: 65px; width: 65px;
+            background-color: orange;
+            box-shadow: none;
+            border: none;
+            top:56px; left: 177px;
+            position:absolute;
+        }
+        #login .check ul li{
+            float: left;
+            color:white;
+            text-align: left;
+            font-size: 0.7em;
+            list-style: none;
+            line-height: 50px;
+
+        }
+        #login a{
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            top:137px;
+            position: absolute;
+            
+
+        }
+        #header{
+            margin: 10px 10px;
+        }
+
+        #menu {
+            background-color: rgba(76, 76, 76, 0.9);
+
+            float: right;
+            width: 150px; height: 200px;
+            overflow: hidden;
+            padding-right: 10px;
+
+   
+
+        }
+        #menu ul{
+            line-height: 27px;
+            float: left;
+            list-style: none;
+            padding: 0 auto;
+            margin: 0px;
+            position: relative;
+            top:10px; left: 0px;
+        }
+
+        #menu ul li a{
+      
+            font-size: 12px;
+            color: whitesmoke;
+            text-decoration: none;
+            margin-left: 2px;
+        }
+
+        #notice{
+            background-color: white;
+            opacity: 95%;
+            float: left;
+            top: 208px;
+            position: absolute;  
+            width: 450px; height: 180px;
+            overflow: hidden;
+        }
+
+        #notice h2{
+            font-size: 16px;
+            margin-left: 20px; margin-top: 15px;
+        }
+        #notice ul li a{
+            font-size: 13px;
+            text-decoration: none;
+            color: gray;
+            line-height: 25px;
+        }
+        #notice .plus{
+            position: absolute;
+            top:15px; left: 420px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        
+        #menu2{
+            
+            text-align:left;
+            
+        }
+        #menu2 .button{
+            background-color: gray;
+            color: white;
+            opacity: 90%;
+            
+            /* position의 속성값이 absolute이면 float속성은 무시됨 */
+            display: inline;
+            position: relative;
+
+            top: 200px;
+            padding:10px 30px 10px 0px;
+            width: 100px;
+            margin-right: 10px;
+            border:1px solid gray;
+            
+
+
+        }
+        #menu2 .button2{
+            background-color: gray;
+            color: white;
+            opacity: 90%;
+            
+            /* position의 속성값이 absolute이면 float속성은 무시됨 */
+            display: inline;
+            position: relative;
+
+            top: 161px; left: 345px;
+            padding:10px 30px 10px 0px;
+            width: 100px;
+            margin-right: 10px;
+            border:1px solid gray;
+            
+        }
+
+        #footer{
+            bottom:0; left:0; right:0;
+            position:fixed;
+            overflow:visible;
+            background-color: rgb(43, 43, 43);
+            line-height: 50px;
+            color: rgb(189, 189, 189);
+            line-height: 50px;
+            width:100%; 
+        
+
+        }
+
+        #footer .address{
+            float:left;
+            font-size: 10px;
+            margin-left: 30px;
+            
+        }
+
+        #footer .copyright{
+            float:right;
+            font-size: 10px;
+            margin-right: 30px;
+            margin-left: 50px;
+            
+
+            
+        }
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div id="header">
+        <p><img src="logo.png" width="150px"></p>
+    </div>
+
+    <div id="wrap">
+        <div id="login">
+            <h2 class="login-title">LOGIN</h2>
+            <div class="login-form">
+                <input type="text" placeholder="아이디">
+                <input type="password" placeholder="비밀번호">
+            </div>
+            <div class="submitt">
+                <input type="submit" class='btn' value="로그인">
+            </div>
+            <div class="check">
+                
+
+                <ul>
+                    <li> <div class ="checkbox"><input type="checkbox"> 사용자이름 기억</div></li>
+                    <li><a href="#none">아이디 / 비밀번호 찾기</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="menu">
+
+            <ul>
+                <li><i class="fa fa-clone" aria-hidden="true"></i>
+                    <a href="#none">종합정보 시스템</a></li>
+                <li><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <a href="#none">CTL 홈페이지</a></li>
+                <li><i class="fa fa-th-list" aria-hidden="true"></i>
+                    <a href="#none">K-StarTrack</a></li>
+                <li><i class="fa fa-clone" aria-hidden="true"></i>
+                    <a href="#none">KMU-OCW</a></li>
+                <li><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <a href="#none">K-MOOC</a></li>
+                <li><i class="fa fa-th-list" aria-hidden="true"></i>
+                    <a href="#none">KCMS</a></li>
+            </ul>
+        </div>
+        <div id="notice">
+            <h2>공지사항</h2>
+            <ul>
+                <li><a href="#none">S-TEAM Class 학생 모니터링단 모집(1학년 대상)</a></li>
+                <li><a href="#none">[교수] 줌 화상강의 오류 시 대처방법</a></li>
+                <li><a href="#none">[교수] 온라인 출석부 설정 관련 유의사항 안내</a></li>
+                <li><a href="#none">KCMS 서버 점검 관련 안내</a></li>
+            </ul>
+            <div class="plus"><a href="#none"><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+        </div>
+        <div id="menu2">
+            <button class="button">Q&A</button>
+            <button class="button">공지사항</button>
+            <button class="button">메뉴얼</button>
+            <button class="button2">강의안내</button>
+        </div>
+        
+
+
+    </div>
+
+    <div id="footer">
+        <div class= "address">02707 서울특별시 성북구 정릉로 77 국민대학교 Tel : 02.910.4114</div>
+        <div class= "copyright">COPYRIGHT ⓒ KOOKMIN UNIVERSITY. ALL RIGHT RESERVED</div>
+    </div>
+</body>
+</html>
