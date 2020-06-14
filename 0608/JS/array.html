@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <script>
+        //함수이용
+        function get_member1(){
+            return 'egoing';
+        }
+        document.write(get_member1());
+
+        function get_member2(){
+            return 'k12';
+        }
+        document.write(get_member2());
+
+        function get_member3(){
+            return 'jisun';
+        }
+        document.write(get_member3());
+
+
+
+        //배열이용
+        function get_members(){
+            return ['egoing', 'k12', 'jisun'];
+        }
+        var members = get_members();
+        document.write(members[0]);
+        document.write(members[1]);
+        document.write(members[2]);
+
+
+
+
+
+        //배열과 반복문
+        function get_members(){
+            return ['egoing','k12','jisun'];
+        }
+
+        members = get_members();
+
+        for(i = 0; i < members.length; i++){
+            document.write(members[i].toUpperCase());    // toUpperCase()는 대문자로 변환
+            document.write('<br/>');
+        }
+
+
+
+
+
+        // .length는 배열의 크기
+
+
+        // < 배열에서 원소의 추가 >
+        // 1. push는 배열의 끝에 원소를 추가
+        var li = ['a','b','c','d','e'];
+        li.push('f');
+        alert(li);
+        // 2. concat은 여러개의 원소를 배열에 추가
+        var li = ['a','b','c','d','e'];
+        li = li.concat(['f','g']);
+        alert(li);
+        // 3. unshift는 배열의 시작점에 원소를 추가
+        var li = ['a','b','c','d','e'];
+        li.unshift('z');
+        alert(li);
+        // 4. splice
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        li.splice(2, 0, 'B');     // 2번째 인자의 0은 1번째 인자의 앞에 3번째 인자를 배치
+        alert(li);
+        //
+        var a = ['a','b','c'];
+        a.splice(1, 1, 'x', 'y');  // 2번째 인자의 1은 첫번째 인자의 지점에서 한개의 원소를 삭제하고 3번째 인자들을 삭제된 위치에 순서대로 넣는다.
+        alert(a);
+
+
+
+
+        // < 배열에서 원소의 제거 >
+        // 1. shift는 배열의 첫번째 원소 제거
+        var li = ['a','b', 'c', 'd', 'e'];
+        li.shift();
+        alert(li);
+        // 2. pop은 배열 마지막 원소를 제거
+        var li = ['a','b','c','d','e'];
+        li.pop();
+        alert(li);
+
+
+
+
+        // < 정렬 >
+        // 
+        var li = ['c','e','a','b','d'];
+        li.sort();
+        alert(li);   // 오름차순 (a ~ z)
+        // 역순으로 정렬
+        var li = ['c','e','a','b','d']
+        li.reverse();
+        alert(li);      // d,b,a,e,c
+
+    </script>
+</body>
+</html>
