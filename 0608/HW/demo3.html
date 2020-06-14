@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <script type="text/javascript">
+            var grades = new Object();
+            // key와 value
+            grades = {'egoing':10, 'k8805':6};
+            
+            var grades2 = {};
+            // alert(grades['egoing']);
+            // alert(grades.k8805);
+
+            for(key in grades){
+                document.write("<li>key: "+ key+ " value: "+grades[key]+"</li>");
+            }
+            
+        </script>
+    </ul>
+
+    <script>
+
+            var grades3 = {
+                'list': {'egoing':10, 'k8805':8, 'soriagi':80},
+                'show': function(){
+                    // alert('Hello world');
+                    //this는 함수가 소속되어있는 객체 grades3을 의미
+                    for(var name in this.list){
+                        document.write(name+": ", this.list[name]+"<br />");
+                    }
+                }
+            }
+            // document.write(grades3['list']['egoing']);
+            grades3.show();
+
+    </script>
+</body>
+</html> 
