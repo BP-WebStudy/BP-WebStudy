@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            /* 960px */
+            width:90%;
+            height:500px;
+            margin:0 auto;
+            border:4px solid #000;
+        }
+        #wrap div{
+            /* 300px / 960px */
+            /* 공통적인 300 + 300px의 패딩설정 */
+            width: 31.25%;
+            display: inline-block;
+          
+        }
+        #wrap div:first-child{
+            /* 50px / 960px */
+            /* 100px의 패딩 설정 */
+            
+            padding: 50px 5.208333333%;
+            background: burlywood;
+        }
+        #wrap div:last-child{
+            /* 130px / 960px */
+            /* 260px의 패딩 설정 */
+            padding: 130px 13.5416666666667%;
+            background: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div><div></div>
+    </div>
+</body>
+</html>
